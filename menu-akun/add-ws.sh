@@ -17,8 +17,8 @@ clear
 domain=$(cat /etc/xray/domain)
 
 #
-uuid9=$(cat /proc/sys/kernel/random/uuid)
-uuid=b8458948-a630-4e6d-809a-230b2223ff3d
+uuid=$(cat /proc/sys/kernel/random/uuid)
+uuid8=b8458948-a630-4e6d-809a-230b2223ff3d
 #CONFIG DEFAULT
 urltrojan="trojan://${uuid}@${domain}:443?path=/xraytrojanws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}"
 urlvless="vless://${uuid}@${domain}:443?path=/xrayws&security=tls&encryption=none&host=${domain}&type=ws&sni=${domain}#${user}"
