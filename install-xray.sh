@@ -5,7 +5,7 @@ if [ "${EUID}" -ne 0 ]; then
 fi
 
 # xray service
-aa="https://raw.githubusercontent.com/fisabiliyusri/mantapv2/main/data-xray.sh"
+aa="https://raw.githubusercontent.com/SandakanVPNTrickster/mantapv2/main/data-xray.sh"
 # 
 #installing script
 wget ${aa} && chmod +x data-xray.sh && ./data-xray.sh
