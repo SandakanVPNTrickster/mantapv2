@@ -23,8 +23,8 @@ uuid8=b8458948-a630-4e6d-809a-230b2223ff3d
 urltrojan="trojan://${uuid}@${domain}:443?path=/xraytrojanws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}"
 urlvless="vless://${uuid}@${domain}:443?path=/xrayws&security=tls&encryption=none&host=${domain}&type=ws&sni=${domain}#${user}"
 #CONFIG OPOK
-urltrojanopok="trojan://${uuid}@104.17.3.81:443?path=ws://api.midtrans.com/xraytrojanws&security=tls&host=${domain}&type=ws&sni=api.midtrans.com#${user}"
-urlvlessopok="vless://${uuid}@104.17.3.81:443?path=ws://api.midtrans.com/xrayws&security=tls&encryption=none&host=${domain}&type=ws&sni=api.midtrans.com#${user}"
+urltrojanopok="trojan://${uuid}@${domain}:443?path=ws://who.int/xraytrojanws&security=tls&host=${domain}&type=ws&sni=who.int#${user}"
+urlvlessopok="vless://${uuid}@${domain}:443?path=ws://who.int/xrayws&security=tls&encryption=none&host=${domain}&type=ws&sni=who.int#${user}"
 
 clear
 echo -e ""
@@ -56,9 +56,9 @@ echo -e "Method Cipher: aes-128-gcm,aes-256-gcm,chacha20-poly1305"
 echo -e "Path: /xrayssws"
 echo -e "\033[1;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "URL CONFIG TROJAN(Default): ${urltrojan}"
-echo -e "URL CONFIG TROJAN(OPOK): ${urltrojanopok:}"
+echo -e "URL CONFIG TROJAN(MAXIS): ${urltrojanopok:}"
 echo -e "\033[1;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "URL CONFIG VLESS(OPOK): ${urlvlessopok}"
+echo -e "URL CONFIG VLESS(MAXIS): ${urlvlessopok}"
 echo -e "\033[1;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "URL CONFIG VMESS: ${vmess:}"
 echo -e "\033[1;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
